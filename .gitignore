@@ -2,3 +2,4 @@
 yarn-error.log
 config.json
 public/dist/
+.DS_Store
