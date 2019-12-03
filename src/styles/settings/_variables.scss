@@ -1,7 +1,27 @@
 // COLORS
+$blue: #565466;
+$blue-dark: #403F4C;
+$grey-dark: #404040;
+$orange: #FF7944;
+$orange-50: #FFA37F;
+$orange-35: #FFBFA5;
+$orange-20: #FFDACC;
+$orange-dark: #994A2A;
 
 // FONT SIZES
 
-// SPACING
+$font-xs-size: 1.6rem;
+$font-s-size: 2rem;
+$font-m-size: 2.4rem;
+$font-l-size: 4.8rem;
+$font-xl-size: 6rem;
 
-// BOOTSTRAP
+// SPACINGS
+$s-size: .8rem;
+$m-size: 1.6rem;
+$l-size: 3.2rem;
+$xl-size: 4.8rem;
+
+// BOX SHADOW
+$box-shadow-light: 0 2px 10px 0 rgba(0,0,0,0.10);
+$box-shadow-medium: 0 2px 4px 0 rgba(0,0,0,0.20);

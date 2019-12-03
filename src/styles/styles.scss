@@ -1,8 +1,21 @@
+// VARIABLES
 @import './settings/variables';
 
-@import '~bootstrap/scss/bootstrap';
-
-@import './settings/base';
-
+// COMPONENTS
+@import './components/buttons';
+@import './components/form';
+@import './components/navigation-buttons';
 @import './components/section';
-@import './components/section1';
+@import './components/slide';
+
+// SECTIONS
+@import './sections/section1';
+@import './sections/section2';
+@import './sections/section3';
+@import './sections/section4';
+@import './sections/section5';
+@import './sections/section6';
+
+// SETTINGS
+@import './settings/base';
+@import './settings/fonts';

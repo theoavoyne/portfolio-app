@@ -1,0 +1,173 @@
+// INPUTS
+
+.form__inputs { margin-bottom: $xl-size; }
+
+// INPUT
+
+.form__input {
+  background: none;
+  border: none;
+  border-bottom: .6rem solid $orange;
+  color: $blue;
+  padding-bottom: $s-size;
+  width: 100%;
+  &::placeholder { color: white; }
+  &:focus {
+    border-bottom-color: $blue;
+    outline: none;
+  }
+}
+
+.form__input--textarea {
+  background: rgba(white, 0.20);
+  padding: $s-size;
+  &:not(:only-child) { margin-top: .6rem; }
+}
+
+.form__input--visited { margin-top: -$s-size; }
+
+// INPUT-GROUP
+
+.form__input-group--small {
+  width: 45%;
+}
+
+.form__input-group--large:not(:last-child) { margin-bottom: $l-size; }
+
+// TWO-INPUTS
+
+.form__two-inputs {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+  &:not(:last-child) { margin-bottom: $l-size; }
+}
+
+// FORM-NAVIGATION
+
+.form-navigation {
+  background-size: cover;
+  height: 20px;
+  margin: 0 auto $l-size auto;
+  width: 110px;
+}
+
+// QUESTION
+
+.form__question {
+  color: $grey-dark;
+  font-size: $font-s-size;
+  font-weight: normal;
+  margin: 0 0 $m-size 0;
+}
+
+// ERROR
+
+.form__error {
+  color: $grey-dark;
+  font-size: $font-xs-size;
+  font-weight: normal;
+  margin: 0 0 $l-size 0;
+}
+
+// LABEL
+
+.form__label {
+  color: $orange;
+  font-size: $font-xs-size;
+}
+
+// CONTROLS
+
+.form__controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+// NEXT-BUTTON
+
+.form__next-btn:only-child { margin-left: auto; }
+
+// PENDING
+
+.form__pending {
+  align-items: center;
+  background: rgba(white, 0.3);
+  border-radius: 50px;
+  bottom: -16px;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  margin: $m-size 0;
+  position: absolute;
+  right: 0;
+  top: -16px;
+}
+
+.form__pending-icon {
+  background-image: url('/images/dualball.svg');
+  height: 200px;
+  left: calc(50% - 100px);
+  position: absolute;
+  top: calc(50% - 100px);
+  width: 200px
+}
+
+// DONE
+
+.form__done {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: $m-size 0;
+}
+
+.form__done__icon {
+  height: 100px;
+  margin-bottom: $xl-size;
+  width: 100px;
+}
+
+.form__done__text {
+  color: $blue;
+  font-size: $font-s-size;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+// RADIO INPUT
+
+.form__radio-input {
+  align-items: center;
+  display: flex;
+  &:not(:last-child) { margin-bottom: $s-size;  }
+}
+
+.form__radio-input__box {
+  align-items: center;
+  box-sizing: border-box;
+  background-color: rgba(white, 0.20);
+  border: 2px solid $orange;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  height: 20px;
+  width: 20px;
+  &:not(:only-child) { margin-right: $s-size;  }
+}
+
+.form__radio-input__check {
+  background-color: $orange;
+  border-radius: 50%;
+  height: 12px;
+  margin: 0 auto;
+  width: 12px;
+}
+
+.form__radio-input__name {
+  color: $grey-dark;
+  font-size: $font-s-size;
+  font-weight: 400;
+}
+

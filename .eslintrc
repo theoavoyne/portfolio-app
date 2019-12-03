@@ -6,10 +6,14 @@
     "browser": true,
     "es2020": true,
   },
+  "globals": {
+    "fullpage_api": true
+  },
   "rules": {
     // GLOBAL
     "comma-dangle": ["error", "never"],
     "consistent-return": "off",
+    "default-case": "off",
     "no-alert": "off",
     "no-console": "off",
     "no-underscore-dangle": "off",
@@ -23,5 +27,8 @@
     "react/jsx-props-no-spreading": "off",
     "react/jsx-fragments": "off",
     "react/state-in-constructor": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off"
   }
 }

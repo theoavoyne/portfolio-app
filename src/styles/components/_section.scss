@@ -1,9 +1,20 @@
 .section {
   position: relative;
   height: 100vh !important;
-  border: 2rem solid white;
-  background: linear-gradient(225deg, #994A2A, #FF7B47);
+  border: $l-size solid white;
+  background: linear-gradient(225deg, $orange-dark, $orange);
 }
+
+.section-title {
+  font-size: $font-xl-size;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: $l-size;
+}
+
 .fp-tableCell {
   height: 100% !important;
 }

@@ -1,11 +1,10 @@
 import 'normalize.css/normalize.css';
-import 'bootstrap';
 
 import './styles/styles.scss';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import AppRouter from './routers/AppRouter';
+import FullpageScroller from './routers/FullpageScroller';
 
-ReactDOM.render(<AppRouter />, document.getElementById('app'));
+ReactDOM.render(<FullpageScroller />, document.getElementById('app'));
