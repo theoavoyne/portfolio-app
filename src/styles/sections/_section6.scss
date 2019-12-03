@@ -1,3 +1,15 @@
+// CONTENT-CONTAINER
+
+#content-container {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: calc(#{$l-size} + #{$font-xl-size} - 8px);
+}
+
 // FORM-CONTAINER
 
 #s6-form-container {
