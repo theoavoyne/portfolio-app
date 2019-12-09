@@ -1,9 +1,7 @@
 import React from 'react';
 
 const Section4 = () => (
-  <div id="s4-skills">
-    <img src="/images/skills.png" alt="Technologies" />
-  </div>
+  <img alt="Technologies" id="s4-skills" />
 );
 
 export default Section4;

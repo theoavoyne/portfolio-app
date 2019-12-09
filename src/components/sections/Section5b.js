@@ -14,7 +14,7 @@ const Section5b = () => (
           Billss.co est une plateforme qui centralise tous vos paiements récurrents en une
           facture payée dès que vous recevez votre salaire.
         </p>
-        <a href="https://www.billss.co/" className="s5-link">Voir site</a>
+        <a href="https://www.billss.co/" className="s5-link" target="_blank">Voir site</a>
       </div>
     </div>
   </div>

@@ -13,7 +13,7 @@ const Section5c = () => (
         <p className="s5-description">
           Cabinet d’avocats basé sur Paris 8ème dédié à la défense pénale et au contentieux.
         </p>
-        <a href="https://www.binsard-avocats.com/" className="s5-link">Voir site</a>
+        <a href="https://www.binsard-avocats.com/" className="s5-link" target="_blank">Voir site</a>
       </div>
     </div>
   </div>

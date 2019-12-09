@@ -11,7 +11,7 @@ const Section2 = () => (
     <img
       src="/images/theo.png"
       alt="Theophile Avoyne"
-      id="s2-img"
+      id="s2-photo"
     />
   </React.Fragment>
 );

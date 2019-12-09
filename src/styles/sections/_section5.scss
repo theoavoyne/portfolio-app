@@ -8,33 +8,34 @@ $s5-breakpoint-desktop: 881px;;
   display: flex;
 }
 
-@media (max-width: $s5-breakpoint-mobile) {
+@media (min-width: $breakpoint-mobile-l + 1) {
   .s5-flex {
-    flex-direction: column;
-    padding: 0 2.4rem;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 70vw;
   }
 }
 
-@media (min-width: $s5-breakpoint-desktop) {
-  .s5-flex {
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 75vw;
-  }
+@media (max-width: $breakpoint-mobile-l) {
+  .s5-flex { flex-direction: column; }
+}
+
+@media (min-width: $breakpoint-mobile-s + 1) and (max-width: $breakpoint-mobile-l) {
+  .s5-flex { padding: 0 calc(#{$m-size} + 30px); }
+}
+
+@media (max-width: $breakpoint-mobile-s) {
+   .s5-flex { padding: 0 calc(#{$s-size} + 3Ò0px); }
 }
 
 // RIGHT
 
-@media (max-width: $s5-breakpoint-mobile) {
-  .s5-right {
-    text-align: center;
-  }
+@media (min-width: $breakpoint-mobile-l + 1) {
+  .s5-right { width: 50%; }
 }
 
-@media (min-width: $s5-breakpoint-desktop) {
-  .s5-right {
-    width: 50%;
-  }
+@media (max-width: $breakpoint-mobile-l) {
+  .s5-right { text-align: center; }
 }
 
 // TITLE
@@ -48,21 +49,19 @@ $s5-breakpoint-desktop: 881px;;
   margin: 0;
 }
 
-@media (max-width: $s5-breakpoint-mobile) {
-  .s5-title {
-    font-size: 3.8rem;
-  }
-}
-
 // DESCRIPTION
 
-.s5-description { font-size: $font-m-size; }
+.s5-description {
+  font-size: $font-m-size;
+  line-height: 1.2;
+}
 
-@media (max-width: $s5-breakpoint-mobile) {
-  .s5-description {
-    font-size: 1.8rem;
-    margin: 1rem 0;
-  }
+@media (max-width: $breakpoint-mobile-l) {
+  .s5-description { margin: $xs-size 0; }
+}
+
+@media (max-width: $breakpoint-mobile-l) {
+  .s5-description { font-size: $font-xs-size; }
 }
 
 // LINK
@@ -70,7 +69,7 @@ $s5-breakpoint-desktop: 881px;;
 .s5-link {
   color: white;
   font-size: $font-s-size;
-  font-weight: 800;
+  font-weight: bold;
   text-decoration: none;
   border-bottom: .6rem solid white;
   transition: all .25s;
@@ -80,12 +79,19 @@ $s5-breakpoint-desktop: 881px;;
   }
 }
 
+@media (max-width: $breakpoint-mobile-l) {
+  .s5-link { font-size: $font-xs-size; }
+}
+
 // ILLUSTRATION
 
-@media (min-width: $s5-breakpoint-desktop) {
+@media (min-width: $breakpoint-mobile-l + 1) {
   .s5-illustration { width: calc(50% - #{$l-size}) }
 }
 
-@media (max-width: $s5-breakpoint-mobile) {
-  .s5-illustration { width: 50vw }
+@media (max-width: $breakpoint-mobile-l) {
+  .s5-illustration {
+    margin-bottom: $xs-size;
+    height: 15vh
+  }
 }

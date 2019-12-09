@@ -13,41 +13,48 @@ $chevron-height: 25px;
 // ARROW-DOWN
 
 .arrow--down {
-  bottom: calc(55px + #{$chevron-width} + #{$l-size});
+  bottom: calc(55px + #{$l-size});
   left: calc(50% - (#{$chevron-height} / 2));
 }
 
-@media (max-width: 575px) {
-  .arrow--down {
-    bottom: calc(55px + #{$chevron-width} + 0.8rem);
-  }
+@media (min-width: $breakpoint-mobile-s + 1) and (max-width: $breakpoint-mobile-l) {
+  .arrow--down { bottom: calc(55px + #{$m-size}); }
+}
+
+@media (max-width: $breakpoint-mobile-s) {
+  .arrow--down { bottom: calc(55px + #{$s-size}); }
 }
 
 // ARROW-LEFT
 
 .arrow--left {
-  left: calc(55px + #{$chevron-width} + #{$l-size});
+  left: calc(30px + #{$l-size});
   top: calc(50% - (#{$chevron-height} / 2));
 }
 
-@media (max-width: 575px) {
-  .arrow--left {
-    left: calc(55px + #{$chevron-width} - 0.8rem);
-  }
+@media (min-width: $breakpoint-mobile-s + 1) and (max-width: $breakpoint-mobile-l) {
+  .arrow--left { left: calc(30px + #{$m-size}); }
+}
+
+@media (max-width: $breakpoint-mobile-s) {
+  .arrow--left { left: calc(30px + #{$s-size}); }
 }
 
 // ARROW-RIGHT
 
 .arrow--right {
-  right: calc(55px + #{$chevron-width} + #{$l-size});
+  right: calc(55px + #{$l-size});
   top: calc(50% - (#{$chevron-height} / 2));
 }
 
-@media (max-width: 575px) {
-  .arrow--right {
-    right: calc(55px + #{$chevron-width} + 0.8rem);
-  }
+@media (min-width: $breakpoint-mobile-s + 1) and (max-width: $breakpoint-mobile-l) {
+  .arrow--right { right: calc(55px + #{$m-size}); }
 }
+
+@media (max-width: $breakpoint-mobile-s) {
+  .arrow--right { right: calc(55px + #{$s-size}); }
+}
+
 
 // CHEVRON
 

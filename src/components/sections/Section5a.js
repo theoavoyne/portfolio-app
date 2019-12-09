@@ -14,7 +14,7 @@ const Section5a = () => (
           Remood est une plateforme qui analyse votre profil et historique d&apos;écoutes
           Spotify pour vous générer des playlists sur-mesure et entièrement personnalisables.
         </p>
-        <a href="https://www.remood.io/" className="s5-link">Voir site</a>
+        <a href="https://www.remood.io/" className="s5-link" target="_blank">Voir site</a>
       </div>
     </div>
   </div>

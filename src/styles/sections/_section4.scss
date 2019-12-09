@@ -1,10 +1,14 @@
 // SKILLS
 
 #s4-skills {
-  display: flex;
-  justify-content: space-around;
-  img {
-    max-height: 54vh;
-    max-width: 80vw;
-  }
+  content: url('/images/skills.png');
+  display: block;
+  margin: 0 auto;
+  max-height: 50vh;
+  max-width: 80vw;
+  object-fit: scale-down;
+}
+
+@media (max-width: $breakpoint-mobile-l) {
+  #s4-skills { content: url('/images/skills-mobile.png'); }
 }

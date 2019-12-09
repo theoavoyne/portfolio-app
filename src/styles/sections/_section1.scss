@@ -12,14 +12,14 @@
 
 @media (min-width: $breakpoint-mobile-s + 1) and (max-width: $breakpoint-mobile-l) {
   #s1-name {
-    font-size: 9rem;
+    font-size: 7rem;
     top: $m-size;
   }
 }
 
 @media (max-width: $breakpoint-mobile-s) {
   #s1-name {
-    font-size: 7rem;
+    font-size: 5rem;
     top: $s-size;
   }
 }
@@ -37,13 +37,13 @@
 @media (min-width: $breakpoint-mobile-s + 1) and (max-width: $breakpoint-mobile-l) {
   #s1-headline {
     padding: 0 $m-size;
-    font-size: $font-xl-size;
+    font-size: $font-l-size;
   }
 }
 
 @media (max-width: $breakpoint-mobile-s) {
   #s1-headline {
     padding: 0 $s-size;
-    font-size: $font-l-size;
+    font-size: $font-m-size;
   }
 }
