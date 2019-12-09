@@ -3,5 +3,8 @@
 #s4-skills {
   display: flex;
   justify-content: space-around;
-  img { height: 410px; }
+  img {
+    max-height: 54vh;
+    max-width: 80vw;
+  }
 }

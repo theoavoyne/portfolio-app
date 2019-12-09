@@ -7,9 +7,24 @@
   right: 0;
 }
 
+@media (max-width: 1140px) {
+  #s2-img {
+    display: none;
+  }
+}
+
 // TEXT
 
-#s2-text {
-  margin-left: 7vw;
-  width: 630px;
+@media (min-width: 1141px) {
+  #s2-text {
+    margin-left: 7vw;
+    width: 630px;
+  }
+}
+
+@media (max-width: 1140px) {
+  #s2-text {
+    padding: 0 7vw;
+    text-align: center;
+  }
 }

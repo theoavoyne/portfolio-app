@@ -1,0 +1,30 @@
+// LABEL
+
+.disponible-label {
+  align-items: center;
+  background: linear-gradient(225deg, $blue-dark, $blue);
+  border-radius: 0 50px 50px 0;
+  box-shadow: $box-shadow-medium;
+  display: flex;
+  position: absolute;
+  padding: $s-size $l-size $s-size $s-size;
+  top: $l-size;
+}
+
+@media (max-width: $breakpoint-mobile-l) {
+  .disponible-label { display: none; }
+}
+
+// LIGHT
+
+.disponible-label__light {
+  background: linear-gradient(225deg, #61D836, #3F8C23);
+  border-radius: 50%;
+  height: 20px;
+  margin-right: $s-size;
+  width: 20px;
+}
+
+// TEXT
+
+.disponible-label__text { font-size: $font-s-size; }

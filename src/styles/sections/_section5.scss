@@ -1,16 +1,43 @@
+$s5-breakpoint-mobile: 880px;
+$s5-breakpoint-desktop: 881px;;
+
 // FLEX
 
 .s5-flex {
   align-items: center;
   display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 70vw;
+}
+
+@media (max-width: $s5-breakpoint-mobile) {
+  .s5-flex {
+    flex-direction: column;
+    padding: 0 2.4rem;
+  }
+}
+
+@media (min-width: $s5-breakpoint-desktop) {
+  .s5-flex {
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 75vw;
+  }
 }
 
 // RIGHT
 
-.s5-right { width: 50%; }
+@media (max-width: $s5-breakpoint-mobile) {
+  .s5-right {
+    text-align: center;
+  }
+}
+
+@media (min-width: $s5-breakpoint-desktop) {
+  .s5-right {
+    width: 50%;
+  }
+}
+
+// TITLE
 
 .s5-title {
   color: $grey-dark;
@@ -21,7 +48,24 @@
   margin: 0;
 }
 
+@media (max-width: $s5-breakpoint-mobile) {
+  .s5-title {
+    font-size: 3.8rem;
+  }
+}
+
+// DESCRIPTION
+
 .s5-description { font-size: $font-m-size; }
+
+@media (max-width: $s5-breakpoint-mobile) {
+  .s5-description {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+  }
+}
+
+// LINK
 
 .s5-link {
   color: white;
@@ -38,4 +82,10 @@
 
 // ILLUSTRATION
 
-.s5-illustration { width: 46% }
+@media (min-width: $s5-breakpoint-desktop) {
+  .s5-illustration { width: calc(50% - #{$l-size}) }
+}
+
+@media (max-width: $s5-breakpoint-mobile) {
+  .s5-illustration { width: 50vw }
+}

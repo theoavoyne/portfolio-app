@@ -9,19 +9,24 @@ $orange-20: #FFDACC;
 $orange-dark: #994A2A;
 
 // FONT SIZES
-
 $font-xs-size: 1.6rem;
 $font-s-size: 2rem;
 $font-m-size: 2.4rem;
-$font-l-size: 4.8rem;
-$font-xl-size: 6rem;
+$font-l-size: 3.2rem;
+$font-xl-size: 4rem;
+$font-xxl-size: 4.8rem;
 
 // SPACINGS
-$s-size: .8rem;
-$m-size: 1.6rem;
+$xs-size: .8rem;
+$s-size: 1.6rem;
+$m-size: 2.4rem;
 $l-size: 3.2rem;
 $xl-size: 4.8rem;
 
 // BOX SHADOW
 $box-shadow-light: 0 2px 10px 0 rgba(0,0,0,0.10);
 $box-shadow-medium: 0 2px 4px 0 rgba(0,0,0,0.20);
+
+// BREAKPOINTS
+$breakpoint-mobile-l: 650px;
+$breakpoint-mobile-s: 350px;

@@ -9,7 +9,7 @@
   border: none;
   border-bottom: .6rem solid $orange;
   color: $blue;
-  padding-bottom: $s-size;
+  padding-bottom: $xs-size;
   width: 100%;
   &::placeholder { color: white; }
   &:focus {
@@ -20,11 +20,11 @@
 
 .form__input--textarea {
   background: rgba(white, 0.20);
-  padding: $s-size;
+  padding: $xs-size;
   &:not(:only-child) { margin-top: .6rem; }
 }
 
-.form__input--visited { margin-top: -$s-size; }
+.form__input--visited { margin-top: -$xs-size; }
 
 // INPUT-GROUP
 
@@ -58,7 +58,7 @@
   color: $grey-dark;
   font-size: $font-s-size;
   font-weight: normal;
-  margin: 0 0 $m-size 0;
+  margin: 0 0 $s-size 0;
 }
 
 // ERROR
@@ -98,7 +98,7 @@
   display: flex;
   flex-direction: column;
   left: 0;
-  margin: $m-size 0;
+  margin: $s-size 0;
   position: absolute;
   right: 0;
   top: -16px;
@@ -119,7 +119,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin: $m-size 0;
+  margin: $s-size 0;
 }
 
 .form__done__icon {
@@ -141,7 +141,7 @@
 .form__radio-input {
   align-items: center;
   display: flex;
-  &:not(:last-child) { margin-bottom: $s-size;  }
+  &:not(:last-child) { margin-bottom: $xs-size;  }
 }
 
 .form__radio-input__box {
@@ -154,7 +154,7 @@
   display: flex;
   height: 20px;
   width: 20px;
-  &:not(:only-child) { margin-right: $s-size;  }
+  &:not(:only-child) { margin-right: $xs-size;  }
 }
 
 .form__radio-input__check {

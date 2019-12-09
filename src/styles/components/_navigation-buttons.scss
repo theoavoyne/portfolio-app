@@ -17,18 +17,36 @@ $chevron-height: 25px;
   left: calc(50% - (#{$chevron-height} / 2));
 }
 
+@media (max-width: 575px) {
+  .arrow--down {
+    bottom: calc(55px + #{$chevron-width} + 0.8rem);
+  }
+}
+
 // ARROW-LEFT
 
 .arrow--left {
-  left: calc(55px + #{$chevron-width} + #{$l-size});;
+  left: calc(55px + #{$chevron-width} + #{$l-size});
   top: calc(50% - (#{$chevron-height} / 2));
+}
+
+@media (max-width: 575px) {
+  .arrow--left {
+    left: calc(55px + #{$chevron-width} - 0.8rem);
+  }
 }
 
 // ARROW-RIGHT
 
 .arrow--right {
-  right: calc(55px + #{$chevron-width} + #{$l-size});;
+  right: calc(55px + #{$chevron-width} + #{$l-size});
   top: calc(50% - (#{$chevron-height} / 2));
+}
+
+@media (max-width: 575px) {
+  .arrow--right {
+    right: calc(55px + #{$chevron-width} + 0.8rem);
+  }
 }
 
 // CHEVRON

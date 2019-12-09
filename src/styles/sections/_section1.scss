@@ -1,32 +1,8 @@
-// LABEL
-
-#s1-label {
-  align-items: center;
-  background: linear-gradient(225deg, $blue-dark, $blue);
-  border-radius: 0 50px 50px 0;
-  box-shadow: $box-shadow-medium;
-  display: flex;
-  left: 0;
-  position: absolute;
-  padding: $m-size $l-size $m-size $m-size;
-  top: $l-size;
-}
-
-#s1-label__light {
-  background: linear-gradient(225deg, #61D836, #3F8C23);
-  border-radius: 50%;
-  height: 20px;
-  margin-right: $m-size;
-  width: 20px;
-}
-
-#s1-label__text { font-size: $font-s-size; }
-
 // NAME
 
 #s1-name {
   font-family: 'Bebas Neue';
-  font-size: 12.8rem;
+  font-size: 12rem;
   line-height: .9;
   position: absolute;
   right: -3px;
@@ -34,6 +10,40 @@
   top: $l-size;
 }
 
+@media (min-width: $breakpoint-mobile-s + 1) and (max-width: $breakpoint-mobile-l) {
+  #s1-name {
+    font-size: 9rem;
+    top: $m-size;
+  }
+}
+
+@media (max-width: $breakpoint-mobile-s) {
+  #s1-name {
+    font-size: 7rem;
+    top: $s-size;
+  }
+}
+
 // HEADLINE
 
-#s1-headline { text-align: center; }
+#s1-headline {
+  font-size: $font-xxl-size;
+  font-weight: normal;
+  margin: 0 auto;
+  max-width: 500px;
+  text-align: center;
+}
+
+@media (min-width: $breakpoint-mobile-s + 1) and (max-width: $breakpoint-mobile-l) {
+  #s1-headline {
+    padding: 0 $m-size;
+    font-size: $font-xl-size;
+  }
+}
+
+@media (max-width: $breakpoint-mobile-s) {
+  #s1-headline {
+    padding: 0 $s-size;
+    font-size: $font-l-size;
+  }
+}

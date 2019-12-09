@@ -3,10 +3,10 @@
 
 // COMPONENTS
 @import './components/buttons';
+@import './components/disponible-label';
 @import './components/form';
 @import './components/navigation-buttons';
 @import './components/section';
-@import './components/slide';
 
 // SECTIONS
 @import './sections/section1';
@@ -18,4 +18,5 @@
 
 // SETTINGS
 @import './settings/base';
+@import './settings/config';
 @import './settings/fonts';
