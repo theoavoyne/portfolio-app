@@ -31,7 +31,7 @@
 .form__input--textarea {
   background: rgba(white, 0.20);
   padding: $xs-size;
-  &:not(:only-child) { margin-top: .6rem; }
+  &:not(:only-child) { margin-top: $xxs-size; }
 }
 
 @media (max-width: $breakpoint-mobile-l) {
@@ -114,7 +114,10 @@
 }
 
 @media (max-width: $breakpoint-mobile-l) {
-  .form__question { font-size: $font-xs-size; }
+  .form__question {
+    font-size: $font-xs-size;
+    margin-bottom: $xs-size;
+  }
 }
 
 // ERROR
@@ -127,7 +130,7 @@
 }
 
 @media (max-width: $breakpoint-mobile-l) {
-  .form__error { font-size: 1.4rem; }
+  .form__error { font-size: $font-xxs-size; }
 }
 
 @media (min-width: $breakpoint-mobile-s + 1) and (max-width: $breakpoint-mobile-l) {
@@ -146,7 +149,7 @@
 }
 
 @media (max-width: $breakpoint-mobile-l) {
-  .form__label { font-size: 1.4rem; }
+  .form__label { font-size: $font-xxs-size; }
 }
 
 // CONTROLS
@@ -163,7 +166,6 @@
 // PENDING
 
 .form__pending {
-  align-items: center;
   background: rgba(white, 0.4);
   background-image: url('/images/dualball.svg');
   background-position: center;
@@ -171,8 +173,6 @@
   background-size: 200px;
   border-radius: 50px;
   bottom: 0;
-  display: flex;
-  flex-direction: column;
   left: 0;
   position: absolute;
   right: 0;
@@ -180,9 +180,7 @@
 }
 
 @media (max-width: $breakpoint-mobile-l) {
-  .form__pending {
-    background-size: 120px;
-  }
+  .form__pending { background-size: 150px; }
 }
 
 // DONE
@@ -198,17 +196,20 @@
 .form__done__text {
   color: $blue;
   font-size: $font-s-size;
-  font-weight: 400;
   text-align: center;
 }
 
 @media (max-width: $breakpoint-mobile-l) {
-  .form__done__icon {
-    margin-bottom: $m-size;
-    height: 60px;
-  }
-
   .form__done__text { font-size: $font-xs-size; }
+  .form__done__icon { height: 60px; }
+}
+
+@media (min-width: $breakpoint-mobile-s + 1) and (max-width: $breakpoint-mobile-l) {
+  .form__done__icon { margin-bottom: $m-size; }
+}
+
+@media (max-width: $breakpoint-mobile-s) {
+  .form__done__icon { margin-bottom: $s-size; }
 }
 
 // RADIO INPUT
@@ -216,18 +217,18 @@
 .form__radio-input {
   align-items: center;
   display: flex;
-  &:not(:last-child) { margin-bottom: $xs-size;  }
+  &:not(:last-child) { margin-bottom: $xs-size; }
 }
 
 .form__radio-input__box {
   align-items: center;
-  box-sizing: border-box;
   background-color: rgba(white, 0.20);
   border: 2px solid $orange;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
   height: 20px;
+  justify-content: space-around;
   width: 20px;
   &:not(:only-child) { margin-right: $xs-size;  }
 }
@@ -236,13 +237,14 @@
   background-color: $orange;
   border-radius: 50%;
   height: 12px;
-  margin: 0 auto;
   width: 12px;
 }
 
 .form__radio-input__name {
   color: $grey-dark;
   font-size: $font-s-size;
-  font-weight: 400;
 }
 
+@media (max-width: $breakpoint-mobile-l) {
+  .form__radio-input__name { font-size: $font-xs-size; }
+}

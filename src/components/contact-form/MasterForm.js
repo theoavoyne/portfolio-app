@@ -30,7 +30,7 @@ class MasterForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentStep: 1,
+      currentStep: 3,
       error: false,
       status: 'not sent',
       ...defaultState
