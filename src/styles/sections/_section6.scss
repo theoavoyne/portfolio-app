@@ -7,7 +7,15 @@
   left: 0;
   position: absolute;
   right: 0;
-  top: calc(#{$l-size} + #{4.8rem} - 8px);
+  top: calc(#{$l-size} + #{$font-xxl-size});
+}
+
+@media (min-width: $breakpoint-mobile-s + 1) and (max-width: $breakpoint-mobile-l) {
+  #content-container { top: calc(#{$m-size} + #{$font-xl-size}); }
+}
+
+@media (max-width: $breakpoint-mobile-s) {
+  #content-container { top: calc(#{$s-size} + #{$font-l-size}); }
 }
 
 // FORM-CONTAINER
@@ -16,7 +24,22 @@
   background: linear-gradient(225deg, $orange-20, $orange-35);
   border-radius: 50px;
   margin: 0 auto;
-  position: relative;
+  width: 523px;
   padding: $l-size $xl-size;
-  width: 40vw;
+  position: relative;
+}
+
+@media (max-width: $breakpoint-mobile-l) {
+  #s6-form-container {
+    padding: $m-size $l-size;
+    width: 100%;
+  }
+}
+
+@media (min-width: $breakpoint-mobile-s + 1) and (max-width: $breakpoint-mobile-l) {
+  #s6-form-container { margin: 0 $m-size; }
+}
+
+@media (max-width: $breakpoint-mobile-s) {
+  #s6-form-container { margin: 0 $s-size; }
 }

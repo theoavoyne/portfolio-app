@@ -4,9 +4,17 @@
   color: white;
   cursor: pointer;
   font-size: $font-xs-size;
-  min-width: 160px;
+  width: 160px;
   padding: $s-size $l-size;
   &:focus { outline: none; }
+}
+
+@media (max-width: $breakpoint-mobile-l) {
+  .button {
+    font-size: 1.2rem;
+    width: 45%;
+    padding: 1.2rem $s-size;
+  }
 }
 
 .button--blue {

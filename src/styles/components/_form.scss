@@ -1,15 +1,25 @@
 // INPUTS
 
-.form__inputs { margin-bottom: $xl-size; }
+.form__inputs { margin-bottom: $l-size; }
+
+@media (min-width: $breakpoint-mobile-s + 1) and (max-width: $breakpoint-mobile-l) {
+  .form__inputs { margin-bottom: $m-size; }
+}
+
+@media (max-width: $breakpoint-mobile-s) {
+  .form__inputs { margin-bottom: $s-size; }
+}
 
 // INPUT
 
 .form__input {
   background: none;
   border: none;
-  border-bottom: .6rem solid $orange;
+  border-bottom: 6px solid $orange;
+  border-radius: 0;
   color: $blue;
-  padding-bottom: $xs-size;
+  font-size: $font-m-size;
+  padding: 0 0 $xs-size 0;
   width: 100%;
   &::placeholder { color: white; }
   &:focus {
@@ -24,15 +34,34 @@
   &:not(:only-child) { margin-top: .6rem; }
 }
 
-.form__input--visited { margin-top: -$xs-size; }
+@media (max-width: $breakpoint-mobile-l) {
+  .form__input {
+    font-size: $font-xs-size;
+    padding-bottom: $xxs-size;
+  }
+}
 
 // INPUT-GROUP
 
 .form__input-group--small {
+  display: flex;
+  flex-direction: column;
   width: 45%;
 }
 
-.form__input-group--large:not(:last-child) { margin-bottom: $l-size; }
+.form__input-group--large {
+  display: flex;
+  flex-direction: column;
+  &:not(:last-child) { margin-bottom: $l-size; }
+}
+
+@media (min-width: $breakpoint-mobile-s + 1) and (max-width: $breakpoint-mobile-l) {
+  .form__input-group--large:not(:last-child) { margin-bottom: $m-size; }
+}
+
+@media (max-width: $breakpoint-mobile-s) {
+  .form__input-group--large:not(:last-child) { margin-bottom: $s-size; }
+}
 
 // TWO-INPUTS
 
@@ -43,13 +72,36 @@
   &:not(:last-child) { margin-bottom: $l-size; }
 }
 
+@media (min-width: $breakpoint-mobile-s + 1) and (max-width: $breakpoint-mobile-l) {
+  .form__two-inputs:not(:last-child) { margin-bottom: $m-size; }
+}
+
+@media (max-width: $breakpoint-mobile-s) {
+  .form__two-inputs:not(:last-child) { margin-bottom: $s-size; }
+}
+
 // FORM-NAVIGATION
 
-.form-navigation {
-  background-size: cover;
+.form__navigation {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   height: 20px;
-  margin: 0 auto $l-size auto;
-  width: 110px;
+  margin-bottom: $l-size;
+}
+
+@media (min-width: $breakpoint-mobile-s + 1) and (max-width: $breakpoint-mobile-l) {
+  .form__navigation {
+    margin-bottom: $m-size;
+    height: 15px;
+  }
+}
+
+@media (max-width: $breakpoint-mobile-s) {
+  .form__navigation {
+    margin-bottom: $s-size;
+    height: 12px;
+  }
 }
 
 // QUESTION
@@ -61,6 +113,10 @@
   margin: 0 0 $s-size 0;
 }
 
+@media (max-width: $breakpoint-mobile-l) {
+  .form__question { font-size: $font-xs-size; }
+}
+
 // ERROR
 
 .form__error {
@@ -70,11 +126,27 @@
   margin: 0 0 $l-size 0;
 }
 
+@media (max-width: $breakpoint-mobile-l) {
+  .form__error { font-size: 1.4rem; }
+}
+
+@media (min-width: $breakpoint-mobile-s + 1) and (max-width: $breakpoint-mobile-l) {
+  .form__error { margin-bottom: $m-size; }
+}
+
+@media (max-width: $breakpoint-mobile-s) {
+  .form__error { margin-bottom: $s-size; }
+}
+
 // LABEL
 
 .form__label {
   color: $orange;
   font-size: $font-xs-size;
+}
+
+@media (max-width: $breakpoint-mobile-l) {
+  .form__label { font-size: 1.4rem; }
 }
 
 // CONTROLS
@@ -92,40 +164,35 @@
 
 .form__pending {
   align-items: center;
-  background: rgba(white, 0.3);
+  background: rgba(white, 0.4);
+  background-image: url('/images/dualball.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 200px;
   border-radius: 50px;
-  bottom: -16px;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   left: 0;
-  margin: $s-size 0;
   position: absolute;
   right: 0;
-  top: -16px;
+  top: 0;
 }
 
-.form__pending-icon {
-  background-image: url('/images/dualball.svg');
-  height: 200px;
-  left: calc(50% - 100px);
-  position: absolute;
-  top: calc(50% - 100px);
-  width: 200px
+@media (max-width: $breakpoint-mobile-l) {
+  .form__pending {
+    background-size: 120px;
+  }
 }
 
 // DONE
 
-.form__done {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  margin: $s-size 0;
-}
-
 .form__done__icon {
+  background-image: url('/images/check-circle.svg');
+  background-position: center;
+  background-repeat: no-repeat;
   height: 100px;
-  margin-bottom: $xl-size;
-  width: 100px;
+  margin-bottom: $l-size;
 }
 
 .form__done__text {
@@ -135,6 +202,14 @@
   text-align: center;
 }
 
+@media (max-width: $breakpoint-mobile-l) {
+  .form__done__icon {
+    margin-bottom: $m-size;
+    height: 60px;
+  }
+
+  .form__done__text { font-size: $font-xs-size; }
+}
 
 // RADIO INPUT
 

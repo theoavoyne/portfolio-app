@@ -3,8 +3,6 @@ import React from 'react';
 import { InputGroup, TextAreaGroup } from './Inputs';
 
 const Step2 = (props) => {
-  const visited = (a, b = false) => (a || b ? 'form__input--visited' : '');
-
   if (props.currentStep !== 2) {
     return null;
   }
@@ -12,7 +10,7 @@ const Step2 = (props) => {
   return (
     <div className="form__inputs">
 
-      <div className={`form__input-group--large ${visited(props.projet)}`}>
+      <div className="form__input-group--large">
         <InputGroup
           handleChange={props.handleChange}
           name="projet"
@@ -21,7 +19,7 @@ const Step2 = (props) => {
         />
       </div>
 
-      <div className={`form__input-group--large ${visited(props.description)}`}>
+      <div className="form__input-group--large">
         <TextAreaGroup
           handleChange={props.handleChange}
           name="description"

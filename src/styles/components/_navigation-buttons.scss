@@ -18,17 +18,17 @@ $chevron-height: 25px;
 }
 
 @media (min-width: $breakpoint-mobile-s + 1) and (max-width: $breakpoint-mobile-l) {
-  .arrow--down { bottom: calc(55px + #{$m-size}); }
+  .arrow--down { bottom: calc(45px + #{$m-size}); }
 }
 
 @media (max-width: $breakpoint-mobile-s) {
-  .arrow--down { bottom: calc(55px + #{$s-size}); }
+  .arrow--down { bottom: calc(45px + #{$s-size}); }
 }
 
 // ARROW-LEFT
 
 .arrow--left {
-  left: calc(30px + #{$l-size});
+  left: calc(40px + #{$l-size});
   top: calc(50% - (#{$chevron-height} / 2));
 }
 
@@ -48,11 +48,11 @@ $chevron-height: 25px;
 }
 
 @media (min-width: $breakpoint-mobile-s + 1) and (max-width: $breakpoint-mobile-l) {
-  .arrow--right { right: calc(55px + #{$m-size}); }
+  .arrow--right { right: calc(45px + #{$m-size}); }
 }
 
 @media (max-width: $breakpoint-mobile-s) {
-  .arrow--right { right: calc(55px + #{$s-size}); }
+  .arrow--right { right: calc(45px + #{$s-size}); }
 }
 
 

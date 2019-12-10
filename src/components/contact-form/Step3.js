@@ -3,8 +3,6 @@ import React from 'react';
 import { InputGroup, RadioInput } from './Inputs';
 
 const Step3 = (props) => {
-  const visited = (a, b = false) => (a || b ? 'form__input--visited' : '');
-
   if (props.currentStep !== 3) {
     return null;
   }
@@ -12,7 +10,7 @@ const Step3 = (props) => {
   return (
     <div className="form__inputs">
 
-      <div className={`form__input-group--large ${visited(props.email)}`}>
+      <div className="form__input-group--large">
         <InputGroup
           handleChange={props.handleChange}
           name="email"
@@ -21,7 +19,7 @@ const Step3 = (props) => {
         />
       </div>
 
-      <div className={`form__input-group--large ${visited(props.telephone)}`}>
+      <div className="form__input-group--large">
         <InputGroup
           handleChange={props.handleChange}
           name="téléphone"

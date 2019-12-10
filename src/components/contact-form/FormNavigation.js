@@ -5,7 +5,7 @@ const FormNavigation = (props) => {
     backgroundImage: `url('/images/form-navigation-${props.currentStep}.svg')`
   };
   return (
-    <div style={style} className="form-navigation" />
+    <div style={style} className="form__navigation" />
   );
 };
 
