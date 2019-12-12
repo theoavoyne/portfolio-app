@@ -12,14 +12,14 @@
 
 @media (min-width: $breakpoint-mobile-s + 1) and (max-width: $breakpoint-mobile-l) {
   #s1-name {
-    font-size: 7rem;
+    font-size: 8rem;
     top: $m-size;
   }
 }
 
 @media (max-width: $breakpoint-mobile-s) {
   #s1-name {
-    font-size: 5rem;
+    font-size: 6rem;
     top: $s-size;
   }
 }

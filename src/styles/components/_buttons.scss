@@ -11,7 +11,7 @@
 
 @media (max-width: $breakpoint-mobile-l) {
   .button {
-    font-size: 1.2rem;
+    font-size: $font-xxs-size;
     width: 45%;
     padding: 1.2rem $s-size;
   }

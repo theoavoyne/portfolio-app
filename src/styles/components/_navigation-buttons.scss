@@ -18,11 +18,11 @@ $chevron-height: 25px;
 }
 
 @media (min-width: $breakpoint-mobile-s + 1) and (max-width: $breakpoint-mobile-l) {
-  .arrow--down { bottom: calc(45px + #{$m-size}); }
+  .arrow--down { bottom: calc(55px + #{$m-size}); }
 }
 
 @media (max-width: $breakpoint-mobile-s) {
-  .arrow--down { bottom: calc(45px + #{$s-size}); }
+  .arrow--down { bottom: calc(55px + #{$s-size}); }
 }
 
 // ARROW-LEFT
@@ -33,11 +33,11 @@ $chevron-height: 25px;
 }
 
 @media (min-width: $breakpoint-mobile-s + 1) and (max-width: $breakpoint-mobile-l) {
-  .arrow--left { left: calc(30px + #{$m-size}); }
+  .arrow--left { left: $m-size; }
 }
 
 @media (max-width: $breakpoint-mobile-s) {
-  .arrow--left { left: calc(30px + #{$s-size}); }
+  .arrow--left { left: $s-size; }
 }
 
 // ARROW-RIGHT
@@ -48,11 +48,11 @@ $chevron-height: 25px;
 }
 
 @media (min-width: $breakpoint-mobile-s + 1) and (max-width: $breakpoint-mobile-l) {
-  .arrow--right { right: calc(45px + #{$m-size}); }
+  .arrow--right { right: calc(#{$chevron-width} + #{$m-size}); }
 }
 
 @media (max-width: $breakpoint-mobile-s) {
-  .arrow--right { right: calc(45px + #{$s-size}); }
+  .arrow--right { right: calc(#{$chevron-width} + #{$s-size}); }
 }
 
 
@@ -117,6 +117,14 @@ $chevron-height: 25px;
   animation: moveRight 3s ease-out 2s infinite;
 }
 
+@media (max-width: $breakpoint-mobile-l) {
+  .chevron--right {
+    animation: none !important;
+    transform: none;
+    &:nth-child(2) { opacity: 1; }
+  }
+}
+
 @keyframes moveRight {
   25% {
     opacity: 1;
@@ -150,6 +158,14 @@ $chevron-height: 25px;
 
 .chevron--left:nth-child(2) {
   animation: moveLeft 3s ease-out 2s infinite;
+}
+
+@media (max-width: $breakpoint-mobile-l) {
+  .chevron--left {
+    animation: none !important;
+    transform: none;
+    &:nth-child(2) { opacity: 1; }
+  }
 }
 
 @keyframes moveLeft {

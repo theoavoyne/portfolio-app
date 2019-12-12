@@ -1,17 +1,17 @@
 // SECTION
 
 .section {
-  position: relative;
-  border: $l-size solid white;
   background: linear-gradient(225deg, $orange-dark, $orange);
+  border: $l-size solid white;
+  position: relative;
 }
 
 @media (min-width: $breakpoint-mobile-s + 1) and (max-width: $breakpoint-mobile-l) {
-  .section { border: $m-size solid white; }
+  .section { border-width: $m-size; }
 }
 
 @media (max-width: $breakpoint-mobile-s) {
-  .section { border: $s-size solid white; }
+  .section { border-width: $s-size; }
 }
 
 // SECTION-TITLE
@@ -30,15 +30,9 @@
 }
 
 @media (min-width: $breakpoint-mobile-s + 1) and (max-width: $breakpoint-mobile-l) {
-  .section-title {
-    font-size: $font-xl-size;
-    top: $m-size;
-  }
+  .section-title { font-size: $font-xl-size; top: $m-size; }
 }
 
 @media (max-width: $breakpoint-mobile-s) {
-  .section-title {
-    font-size: $font-l-size;
-    top: $s-size;
-  }
+  .section-title { font-size: $font-l-size; top: $s-size; }
 }

@@ -24,7 +24,7 @@ $breakpoint-s3: 1170px;
 }
 
 @media (max-width: $breakpoint-mobile-s) {
-   #s3-text {
+  #s3-text {
     font-size: $font-xs-size;
     padding: 0 $s-size;
   }

@@ -15,21 +15,24 @@ $breakpoint-s2: 1170px;
 
 // TEXT
 
-#s2-text { line-height: 1.4; }
+#s2-text {
+  line-height: 1.4;
+  text-align: center;
+}
 
 @media (min-width: $breakpoint-s2 + 1) {
   #s2-text {
     font-size: $font-l-size;
     margin-left: 7.5vw;
+    text-align: left;
     width: 640px;
   }
 }
 
-@media (max-width: $breakpoint-s2) {
+@media (min-width: $breakpoint-mobile-l + 1) and (max-width: $breakpoint-s2) {
   #s2-text {
     font-size: $font-m-size;
     padding: 0 15vw;
-    text-align: center;
   }
 }
 
