@@ -1,5 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const webpack = require('webpack');
 
 module.exports = (env) => {
   const CSSExtract = new MiniCssExtractPlugin({
@@ -34,7 +35,7 @@ module.exports = (env) => {
         ]
       }]
     },
-    plugins: [CSSExtract],
+    plugins: [CSSExtract, new webpack.DefinePlugin({ REACT_ENV: JSON.stringify(env) })],
     devtool: env === 'production' ? 'source-map' : 'inline-source-map'
   };
 };

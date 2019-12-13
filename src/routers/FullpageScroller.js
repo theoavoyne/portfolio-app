@@ -30,6 +30,7 @@ const FullpageScroller = () => {
   return (
     <ReactFullpage
       licenseKey="005C85F9-3D6D40F9-87556F4F-CB409887"
+      anchors={REACT_ENV === 'development' ? ['1', '2', '3', '4', '5', '6'] : []}
       controlArrows={false}
       onSlideLeave={handleSlideLeave}
       afterLoad={handleSectionLoad}
