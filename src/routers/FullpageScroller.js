@@ -19,12 +19,20 @@ const FullpageScroller = () => {
     setSlideNumber(destination.index);
   };
 
+  const handleSectionLoad = (origin, destination) => {
+    const aosItems = destination.item.getElementsByClassName('aos-init');
+    const len = aosItems === null ? 0 : aosItems.length;
+    for (let i = 0; i < len; i += 1) {
+      aosItems[i].classList.add('aos-animate');
+    }
+  };
+
   return (
     <ReactFullpage
       licenseKey="005C85F9-3D6D40F9-87556F4F-CB409887"
-      anchors={['1', '2', '3', '4', '5', '6']}
       controlArrows={false}
       onSlideLeave={handleSlideLeave}
+      afterLoad={handleSectionLoad}
       render={() => (
         <ReactFullpage.Wrapper>
 
