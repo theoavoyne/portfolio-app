@@ -74,7 +74,7 @@ const FullpageScroller = () => {
         </ReactFullpage.Wrapper>
       )}
     />
-  )
+  );
 };
 
 export default FullpageScroller;
